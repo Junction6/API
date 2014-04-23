@@ -39,6 +39,7 @@ Example : http://api.junction6travel.com/jsonservice/v1/availability/&ProductID=
 
 
 TOKENS (by Client)
+
 **Note**: connexion tokens for real clients can be requested.
 
 **Demo Client**: 43e9457e334df268270a9d7b275d3700
