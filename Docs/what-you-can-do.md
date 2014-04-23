@@ -19,7 +19,7 @@
 <tr>
 <td class=""><p><strong>Get Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/order/</p></td>
-<td class=""><p>`&amp;orderid`=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Delete Order</strong> <br class="atl-forced-newline">
@@ -40,21 +40,21 @@
 <tr>
 <td class=""><p><strong>Get Availability</strong> <br class="atl-forced-newline">
 /jsonservice/v1/availability/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;p<em>roductid</em></span>=[ID of product] <span style="color: rgb(220,35,0);"><strong>OR</strong> &amp;<em>productcode</em></span>=[Code of product] <br class="atl-forced-newline">
+<td class=""><p><code><strong>&amp;productid</code></strong>=[ID of product] OR <code><strong>&amp;productcode</code></strong>=[Code of product] <br class="atl-forced-newline">
 &amp;<em>date</em>=[date : YYYY-MM-DD] (today by default)</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Add Item to Oder</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderadditem/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order] <br class="atl-forced-newline">
-<span style="color: rgb(220,35,0);">&amp;p<em>roductvariation</em></span>=[ID of price variation] <br class="atl-forced-newline">
+<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order] <br class="atl-forced-newline">
+<code><strong>&amp;productvariation</code></strong>=[ID of price variation] <br class="atl-forced-newline">
 &amp;<em>quantity</em>=[Quantity of the item] (1 by default) <br class="atl-forced-newline">
 &amp;<em>eventid</em>=[ID of event]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Complete Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/completeorder/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Create New Customer</strong> <br class="atl-forced-newline">
@@ -68,8 +68,8 @@
 <tr>
 <td class=""><p><strong>Add Customer to Oder</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderaddcustomer/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order] <br class="atl-forced-newline">
-<span style="color: rgb(220,35,0);">&amp;<em>customerid</em></span>=[ID of customer]</p></td>
+<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order] <br class="atl-forced-newline">
+<code><strong>&amp;customerid</code></strong>&amp;=[ID of customer]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Customer</strong> (by id) <br class="atl-forced-newline">
