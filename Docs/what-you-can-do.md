@@ -24,7 +24,7 @@
 <tr>
 <td class=""><p><strong>Delete Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/deleteorder/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order]</p></td>
+<td class=""><p><em color="red">&amp;orderid</em>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Clear Order</strong> : remove all items from order. <br class="atl-forced-newline">
