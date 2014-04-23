@@ -1,7 +1,7 @@
-Example: Accomodation Product
+Example: Limited Availability Product
 ===
 
-####Te Anau Lakefront Backpackers Accommodation
+####Emperors Wings - 2.5 Day / 3 Night - Whitehaven Beach & Outer Great Barrier Reef - Liveaboard Diving Tour
 >http://api.junction6travel.com/jsonservice/v1/products/&ProductID=4893
 
 ```JSON
