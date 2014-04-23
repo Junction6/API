@@ -1,4 +1,3 @@
-
 <table><tbody>
 <tr>
 <td class=""><p><strong>API Call</strong></p></td>
@@ -20,7 +19,7 @@
 <tr>
 <td class=""><p><strong>Get Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/order/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order]</p></td>
+<td class=""><p>`&amp;orderid`=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Delete Order</strong> <br class="atl-forced-newline">
