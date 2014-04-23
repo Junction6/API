@@ -69,22 +69,22 @@
 <td class=""><p><strong>Add Customer to Oder</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderaddcustomer/</p></td>
 <td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order] <br class="atl-forced-newline">
-<code><strong>&amp;customerid</code></strong>&amp;=[ID of customer]</p></td>
+<code><strong>&amp;customerid</code></strong>=[ID of customer]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Customer</strong> (by id) <br class="atl-forced-newline">
 /jsonservice/v1/customer/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>customerid</em></span>=[ID of customer]</p></td>
+<td class=""><p><code><strong>&amp;customerid</code></strong>=[ID of customer]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Customer</strong> (by order id) <br class="atl-forced-newline">
 /jsonservice/v1/ordercustomer/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Verify Customer :</strong> check if order have customer <br class="atl-forced-newline">
 /jsonservice/v1/orderhavecustomer/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Make a booking</strong></p></td>
