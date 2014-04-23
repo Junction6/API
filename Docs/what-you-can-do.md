@@ -102,4 +102,4 @@
 </tbody></table>
 
 Notes :
-<code>&parameter</code>'s displayed like this are mandatory.
+<code><strong>&amp;parameter</strong></code>'s displayed like this are mandatory.
