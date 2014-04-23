@@ -19,29 +19,29 @@
 <tr>
 <td class=""><p><strong>Get Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/order/</p></td>
-<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Delete Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/deleteorder/</p></td>
-<td class=""><p><code><strong>&amp;orderid</strong></code>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</strong></code></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Clear Order</strong> : remove all items from order. <br class="atl-forced-newline">
 /jsonservice/v1/clearorder/</p></td>
-<td class=""><p><code><strong>&amp;orderid</strong></code>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</strong></code></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Remove Item from Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderdeleteitem/</p></td>
-<td class=""><p><code><strong>&amp;orderid</strong></code>=[ID of order] <br class="atl-forced-newline">
-<code><strong>&amp;orderitemid</strong></code>=[ID of order item]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</strong></code> <br class="atl-forced-newline">
+<code><strong>&amp;orderitemid=[ID of order item]</strong></code></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Availability</strong> <br class="atl-forced-newline">
 /jsonservice/v1/availability/</p></td>
-<td class=""><p><code><strong>&amp;productid</code></strong>=[ID of product] OR <code><strong>&amp;productcode</code></strong>=[Code of product] <br class="atl-forced-newline">
-&amp;<em>date</em>=[date : YYYY-MM-DD] (today by default)</p></td>
+<td class=""><p><code><strong>&amp;productid=[ID of product]</strong></code> OR <code><strong>&amp;productcode=[Code of product]</strong></code> <br class="atl-forced-newline">
+<code>&amp;<em>date</em>=[date : YYYY-MM-DD]</code> (today by default)</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Add Item to Oder</strong> <br class="atl-forced-newline">
@@ -102,4 +102,4 @@
 </tbody></table>
 
 Notes :
-<code><strong>&amp;parameter</strong></code>'s displayed like this are mandatory.
+<code><strong>&amp;parameter</strong></code>'s displayed in bold like this are mandatory.
