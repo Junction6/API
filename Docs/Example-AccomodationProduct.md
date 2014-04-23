@@ -5,7 +5,6 @@ Example: Accomodation Product
 >http://junction6travel.com/products/accommodation/1108
 
 ```JSON
-{
 "response": {
 "ID": 1108,
 "RequireLeadCustomerSummaryDetails": "0",
@@ -174,7 +173,6 @@ Example: Accomodation Product
 "SpecialPrices": [ ],
 "ExtraProducts": [ ],
 "SaleType": "Per Room"
-}
 }
 ```
 
