@@ -1,20 +1,14 @@
-
  
 
 
 | API Call | Available Parameters |
 | --- | --- | 
 | Get Products | /jsonservice/v1/products/
-
 &productid=[ID of product] OR &productcode=[Code of product] 
-
 &limit=[Integer] 
-
 &fields=[name of field1, name of field2, ...] 
-
 &live=[0 OR 1] |
 | Create New Order: create an empty order. | /jsonservice/v1/neworder/
-
 No parameters. |
 
 
