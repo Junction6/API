@@ -37,7 +37,7 @@ try {
     return;
 }
 
-echo 'Your order was successful. Your Order Number is #' . $orderRecord.ID;
+echo 'Your order was successful. Your Order Number is #' . $orderRecord->ID;
 
 ```
 
