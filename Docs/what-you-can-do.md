@@ -6,10 +6,10 @@
 <tr>
 <td class=""><p><strong>Get Products</strong> <br class="atl-forced-newline">
 /jsonservice/v1/products/</p></td>
-<td class=""><p>&amp;p<em>roductid</em>=[ID of product] <strong>OR</strong> &amp;<em>productcode</em>=[Code of product] <br class="atl-forced-newline">
-&amp;<em>limit</em>=[Integer] <br class="atl-forced-newline">
-&amp;<em>fields</em>=[name of field1, name of field2, ...] <br class="atl-forced-newline">
-&amp;<em>live</em>=[0 OR 1]</p></td>
+<td class=""><p><code>&amp;productid=[ID of product]</code> <strong>OR</strong> <code>&amp;productcode=[Code of product]</code> <br class="atl-forced-newline">
+<code>&amp;<em>limit</em>=[Integer]</code> <br class="atl-forced-newline">
+<code>&amp;<em>fields</em>=[name of field1, name of field2, ...]</code> <br class="atl-forced-newline">
+<code>&amp;<em>live</em>=[0 OR 1]</code></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Create New Order</strong> : create an empty order. <br class="atl-forced-newline">
@@ -46,24 +46,24 @@
 <tr>
 <td class=""><p><strong>Add Item to Oder</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderadditem/</p></td>
-<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order] <br class="atl-forced-newline">
-<code><strong>&amp;productvariation</code></strong>=[ID of price variation] <br class="atl-forced-newline">
-&amp;<em>quantity</em>=[Quantity of the item] (1 by default) <br class="atl-forced-newline">
-&amp;<em>eventid</em>=[ID of event]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong> <br class="atl-forced-newline">
+<code><strong>&amp;productvariation=[ID of price variation]</code></strong> <br class="atl-forced-newline">
+<code>&amp;<em>quantity=[Quantity of the item]</code> (1 by default) <br class="atl-forced-newline">
+<code>&amp;<em>eventid=[ID of event]</code></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Complete Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/completeorder/</p></td>
-<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Create New Customer</strong> <br class="atl-forced-newline">
 /jsonservice/v1/newcustomer/</p></td>
-<td class=""><p>&amp;<em>surname</em>=[Surname to set for the new customer] <br class="atl-forced-newline">
-&amp;<em>firstname</em>=[First Name to set for the new customer] <br class="atl-forced-newline">
-&amp;<em>email</em>=[Email to set for the new customer] <br class="atl-forced-newline">
-&amp;<em>mobilephone</em>=[Mobile Phone to set for the new customer] <br class="atl-forced-newline">
-&amp;<em>country</em>=[Country to set for the new customer]</p></td>
+<td class=""><p><code>&amp;<em>surname</em>=[Surname to set for the new customer]</code> <br class="atl-forced-newline">
+<code>&amp;<em>firstname</em>=[First Name to set for the new customer]</code> <br class="atl-forced-newline">
+<code>&amp;<em>email</em>=[Email to set for the new customer]</code> <br class="atl-forced-newline">
+<code>&amp;<em>mobilephone</em>=[Mobile Phone to set for the new customer]</code> <br class="atl-forced-newline">
+<code>&amp;<em>country</em>=[Country to set for the new customer]</code></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Add Customer to Oder</strong> <br class="atl-forced-newline">
