@@ -34,7 +34,7 @@
 <tr>
 <td class=""><p><strong>Remove Item from Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderdeleteitem/</p></td>
-<td class=""><p><em style="color: rgb(220,35,0);">&amp;orderid</em>=[ID of order] <br class="atl-forced-newline">
+<td class=""><p><font color="red"><em>&amp;orderid</em></font>=[ID of order] <br class="atl-forced-newline">
 <span style="color: rgb(220,35,0);">&amp;<em>orderitemid</em></span>=[ID of order item]</p></td>
 </tr>
 <tr>
