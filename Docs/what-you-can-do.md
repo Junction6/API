@@ -24,18 +24,18 @@
 <tr>
 <td class=""><p><strong>Delete Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/deleteorder/</p></td>
-<td class=""><p><code>&amp;orderid</code>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid</strong></code>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Clear Order</strong> : remove all items from order. <br class="atl-forced-newline">
 /jsonservice/v1/clearorder/</p></td>
-<td class=""><p><span style="color: rgb(220,35,0);">&amp;<em>orderid</em></span>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid</strong></code>=[ID of order]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Remove Item from Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderdeleteitem/</p></td>
-<td class=""><p><font color="red"><em>&amp;orderid</em></font>=[ID of order] <br class="atl-forced-newline">
-<span style="color: rgb(220,35,0);">&amp;<em>orderitemid</em></span>=[ID of order item]</p></td>
+<td class=""><p><code><strong>&amp;orderid</strong></code>=[ID of order] <br class="atl-forced-newline">
+<code><strong>&amp;orderitemid</strong></code>=[ID of order item]</p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Availability</strong> <br class="atl-forced-newline">
