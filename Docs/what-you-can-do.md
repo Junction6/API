@@ -59,7 +59,7 @@
 <tr>
 <td class=""><p><strong>Create New Customer</strong> <br class="atl-forced-newline">
 /jsonservice/v1/newcustomer/</p></td>
-<td class=""><p><code>&amp;<em>surname</em>=[Surname to set for the new customer]</code> <br class="atl-forced-newline">
+<td class=""><p><code><strong>&amp;<em>surname</em>=[Surname to set for the new customer]</strong></code> <br class="atl-forced-newline">
 <code>&amp;<em>firstname</em>=[First Name to set for the new customer]</code> <br class="atl-forced-newline">
 <code>&amp;<em>email</em>=[Email to set for the new customer]</code> <br class="atl-forced-newline">
 <code>&amp;<em>mobilephone</em>=[Mobile Phone to set for the new customer]</code> <br class="atl-forced-newline">
@@ -68,23 +68,23 @@
 <tr>
 <td class=""><p><strong>Add Customer to Oder</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderaddcustomer/</p></td>
-<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order] <br class="atl-forced-newline">
-<code><strong>&amp;customerid</code></strong>=[ID of customer]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong> <br class="atl-forced-newline">
+<code><strong>&amp;customerid=[ID of customer]</code></strong></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Customer</strong> (by id) <br class="atl-forced-newline">
 /jsonservice/v1/customer/</p></td>
-<td class=""><p><code><strong>&amp;customerid</code></strong>=[ID of customer]</p></td>
+<td class=""><p><code><strong>&amp;customerid=[ID of customer]</code></strong></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Get Customer</strong> (by order id) <br class="atl-forced-newline">
 /jsonservice/v1/ordercustomer/</p></td>
-<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Verify Customer :</strong> check if order have customer <br class="atl-forced-newline">
 /jsonservice/v1/orderhavecustomer/</p></td>
-<td class=""><p><code><strong>&amp;orderid</code></strong>=[ID of order]</p></td>
+<td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong></p></td>
 </tr>
 <tr>
 <td class=""><p><strong>Make a booking</strong></p></td>
