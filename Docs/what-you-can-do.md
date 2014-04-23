@@ -1,9 +1,9 @@
 
-
  
 
 
 | API Call | Available Parameters |
+| --- | --- | 
 | Get Products | /jsonservice/v1/products/
 
 &productid=[ID of product] OR &productcode=[Code of product] 
