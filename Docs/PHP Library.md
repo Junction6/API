@@ -15,6 +15,27 @@ try {
 } 
 ```
 
+####Find Order
+Takes either a numberic id or an array contain in search data
+```php
+$order = j6Order::find($id)
+// Will return a single record
+
+```
+
+```php
+$data = array('FirstName' => 'John', 'Surname' => 'Smith%');
+$order = j6Order::find($data);
+// Will return a single record or an array
+
+if(is_array($order)) {
+    //Display list or orders
+} else {
+    //Do something with result
+}
+
+```
+
 
 
 ```php
