@@ -8,13 +8,12 @@
 /jsonservice/v1/products/</p></td>
 <td class=""><p>Products list: <code>/</code>
 <br class="atl-forced-newline"><br class="atl-forced-newline">
-Single product: <br class="atl-forced-newline"><code>/[ID of product]</code>
+Single product: <br class="atl-forced-newline"><code>/[ID or Code of product]</code>
 <br class="atl-forced-newline">
 or
 <br class="atl-forced-newline">
-<code>&amp;productid=[ID of product]</code> 
-<br class="atl-forced-newline">or
-<br class="atl-forced-newline"><code>&amp;productcode=[Code of product]</code> <br class="atl-forced-newline"><br class="atl-forced-newline">
+<code>&amp;productid=[ID or code of product]</code> 
+<br class="atl-forced-newline"><br class="atl-forced-newline">
 Optional inputs<br class="atl-forced-newline">
 <code>&amp;<em>limit</em>=[Integer]</code> <br class="atl-forced-newline">
 <code>&amp;<em>fields</em>=[name of field1, name of field2, ...]</code> <br class="atl-forced-newline">
