@@ -48,6 +48,9 @@ Limit results to 500 first products (get all products could not work if lot of p
 
 > /products/?token=xyz&limit=500
 
+Limit results to 500 products starting at 501 (Products 501-1000):
+> /products/?token=xyz&limit=500,500
+
 
 ---
 
@@ -120,7 +123,7 @@ Get 50 products for Demo Client:
 
 Get all products for Demo Client but limit the Variations to the first 2 variations:
 
-> http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&variations_limit=1,2
+> http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&variations_limit=2
 
 Get one Product by ID, only retrieve the Product Title and the Supplier ID:
 
