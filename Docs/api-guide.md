@@ -69,11 +69,11 @@ Get specified fields.  If the field is itself an Object it is possible to use do
 
 Filter Results by Field: 
 
-/products/?token=xyz&filter[SupplierID]=4321
+> /products/?token=xyz&filter[SupplierID]=4321
 
 Multiple filters can be used:
 
-/products/?token=xyz&filter[ClassName]=LimitedAvailabilityDateAndTimeProduct&filter[ShowOnWhitelabel]=1
+> /products/?token=xyz&filter[ClassName]=LimitedAvailabilityDateAndTimeProduct&filter[ShowOnWhitelabel]=1
 
 
 ---
@@ -85,11 +85,11 @@ Products that have Events (Limited Availability, Accomodation, Routes, Tours) wi
 
 Return all products, those with events also include all events for 1st September 2014
 
-/products/?token=xyz&events_filter[CalendarStartDate]=2014-09-01 
+> /products/?token=xyz&events_filter[CalendarStartDate]=2014-09-01 
 
 Return single product with all events for the week starting 1st September 2014
 
-/products/?token=xyz&productid=123&events_filter[CalendarStartDate]=2014-09-01&events_filter[CalendarStartDate]=2014-09-08
+> /products/?token=xyz&productid=123&events_filter[CalendarStartDate]=2014-09-01&events_filter[CalendarStartDate]=2014-09-08
 
 NB: events_filter is case sensitive.
 
