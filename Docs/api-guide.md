@@ -85,13 +85,11 @@ Products that have Events (Limited Availability, Accomodation, Routes, Tours) wi
 
 Return all products, those with events also include all events for 1st September 2014
 
-> /products/?token=xyz&events_filter[CalendarStartDate]=2014-09-01 
+> /products/?token=xyz&filter[Events.CalendarStartDate]=2014-09-01 
 
-Return single product with all events for the week starting 1st September 2014
+Return the weeks events for a product starting 1st September 2014, just showing the ID, date and remaining capacity
 
-> /products/?token=xyz&productid=123&events_filter[CalendarStartDate]=2014-09-01&events_filter[CalendarStartDate]=2014-09-08
-
-NB: events_filter is case sensitive.
+> /products/?token=xyz&productid=123&filter[Events.CalendarStartDate]=2014-09-01&events_filter[Events.CalendarEndDate]=2014-09-08&fields=Events.ID,Events.Date,Events.Remaining
 
 ---
 
