@@ -6,9 +6,9 @@
 <tr>
 <td class=""><p><strong>Get Products</strong> <br class="atl-forced-newline">
 /jsonservice/v1/products/</p></td>
-<td class=""><p>Product list: <code>/</code>
+<td class=""><p>Products list: <code>/</code>
 <br class="atl-forced-newline">
-Single product: <code>/[[ID of product]]</code>
+Single product: <code>/[ID of product]</code>
 <br class="atl-forced-newline">
 <strong>OR</strong>
 <br class="atl-forced-newline">
