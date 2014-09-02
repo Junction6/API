@@ -79,6 +79,23 @@ Multiple filters can be used:
 ---
 
 
+## Product Events
+
+Products that have Events (Limited Availability, Accomodation, Routes, Tours) will by default return todays events in the `Events` property. You can change this by passing in filters to the Events object controlling both a start date `CalendarStartDate` and an end date `CalendarEndDate`. If you only specify a start date you will be returned all events for that day.
+
+Return all products, those with events also include all events for 1st September 2014
+
+/products/?token=xyz&events_filter[CalendarStartDate]=2014-09-01 
+
+Return single product with all events for the week starting 1st September 2014
+
+/products/?token=xyz&productid=123&events_filter[CalendarStartDate]=2014-09-01&events_filter[CalendarStartDate]=2014-09-08
+
+NB: events_filter is case sensitive.
+
+---
+
+
 
 #GET AVAILABILITY (of the product)
 You need to know the ID or the Code of the product you want to search availability for.
@@ -131,7 +148,7 @@ Get one Product by ID, only retrieve the Product Title and the Supplier ID:
 
 Get Todays Events for a Limited Availability Product:
 
-> http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&productid=1234&fields=Event.TodaysEvents
+> http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&productid=1234&fields=Events
 
 Get all Products by Supplier ID, return the ID and Title of the Product:
 
