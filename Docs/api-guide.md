@@ -37,10 +37,15 @@ All available methods are listed in the document file ["Available API Requests"]
 
 #OPTIONS
 
-Examples using the "products" method. Get all products: 
+Examples using the "products" method. 
+Get all products: 
 
 > /products/?token=xyz
 
+To get single product you can pass the ID number in two ways
+ 
+> /products/123?token=xyz
+> /products/?token=xyz&productid=123
 
 ## limit
 
@@ -142,11 +147,11 @@ Get all products for Demo Client but limit the Variations to the first 2 variati
 
 Get one Product by ID, only retrieve the Product Title and the Supplier ID:
 
-> http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&productid=1234&fields=Title,Supplier.ID
+> http://api.junction6travel.com/jsonservice/v1/products/1234/?token=43e9457e334df268270a9d7b275d3700&fields=Title,Supplier.ID
 
 Get Todays Events for a Limited Availability Product:
 
-> http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&productid=1234&fields=Events
+> http://api.junction6travel.com/jsonservice/v1/products/1234/?token=43e9457e334df268270a9d7b275d3700&fields=Events
 
 Get all Products by Supplier ID, return the ID and Title of the Product:
 
