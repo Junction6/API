@@ -15,6 +15,7 @@ or
 <code>&amp;productid=[ID of product]</code> 
 <br class="atl-forced-newline">or
 <br class="atl-forced-newline"><code>&amp;productcode=[Code of product]</code> <br class="atl-forced-newline"><br class="atl-forced-newline">
+Optional inputs<br class="atl-forced-newline">
 <code>&amp;<em>limit</em>=[Integer]</code> <br class="atl-forced-newline">
 <code>&amp;<em>fields</em>=[name of field1, name of field2, ...]</code> <br class="atl-forced-newline">
 <code>&amp;<em>live</em>=[0 OR 1]</code></p></td>
