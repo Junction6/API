@@ -38,6 +38,7 @@ All available methods are listed in the document file ["Available API Requests"]
 #OPTIONS
 
 Examples using the "products" method. 
+
 Get all products: 
 
 > /products/?token=xyz
@@ -45,6 +46,7 @@ Get all products:
 To get single product you can pass the ID number in two ways
  
 > /products/123?token=xyz
+
 > /products/?token=xyz&productid=123
 
 ## limit
