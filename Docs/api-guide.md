@@ -51,9 +51,13 @@ To get single product you can pass the ID number in two ways
 
 ## limit
 
-Sets of record results are limited in the following way
+Sets of record results are limited in the following way, there is also the option to include a start parameter
 
-> /products?token=xyz&limit=[Number to return(,[Start record])]
+> /products?token=xyz&limit=[Number to return]
+
+OR
+
+> /products?token=xyz&limit=[Start record],[Number to return]
 
 Limit results to 100 first products (get all products could not work if lot of products): 
 
@@ -61,6 +65,8 @@ Limit results to 100 first products (get all products could not work if lot of p
 
 Limit results to 100 products starting at 301 (Products 301-400):
 > /products/?token=xyz&limit=300,100
+
+NB: Records start at 0, so limit=10, is equivilant to writing limit=0,10 and will return the first 10 records. limit=1,10 would return records 2-11
 
 
 ---
