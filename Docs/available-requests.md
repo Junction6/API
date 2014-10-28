@@ -2,12 +2,17 @@
 
 A description of Objects referenced here can be found in the [Appendix](https://github.com/Junction6/API/blob/V1/Docs/appendix.md).
 
-## Utils:
+## Utils (HTTP GET):
 
 ### neworder
 **Required Parameters**
 
 **_none_**
+
+**Optional Parameters**
+
+* **_customerid_** - Specify an existing customer id to attach to this new order.
+* **_Customer_** - An array of Customer parameters to give the newly created Customer on this new order.  Reference the [Customer Object](https://github.com/Junction6/API/blob/V1/Docs/appendix.md#customerobject) for possible fields to set.  Cannot be used in conjunction with parameter **_customerid_**. To update an existing customer use **setcustomer**
 
 **Response**
 
@@ -56,6 +61,22 @@ A description of Objects referenced here can be found in the [Appendix](https://
 **Required Parameters**
 
 **_none_**
+
+**Response**
+
+* **_CustomerObject_**
+
+---
+
+
+### setcustomer
+**Required Parameters**
+
+**_customerid_** _String_ - ID of the existing Customer to edit.
+
+**Optional Parameters**
+
+Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/V1/Docs/appendix.md#customerobject).
 
 **Response**
 
@@ -115,11 +136,31 @@ A description of Objects referenced here can be found in the [Appendix](https://
 ---
 
 
+## Utils (HTTP POST):
+
+### authenticateCustomer
+**Required Parameters**
+
+**_username_** - _String_ Encrypted username
+
+**_password_** - _String_ Encrypted password
+
+**Response**
+
+* **_CustomerObject_** On success or Error Message "Invalid login attempt" on failure with status code 403 Forbidden.
+
+**Notes**
+
+This method is only available through HTTP POST. Both username and password must be encryted with the agreed upon cipher method, mode and salt.
+
+
+---
 
 
 
 
-## Reads:
+
+## Reads (HTTP GET):
 
 ### getorder
 **Required Parameters**

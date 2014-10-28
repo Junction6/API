@@ -6,7 +6,7 @@ Methods can be accessed via url : [http://api.junction6travel.com]
 
 Request methods via API : **BASE + METHOD + OPTIONS + TOKEN**
 
-**BASE** : url for connection (for tests) : [http://api.junction6travel.com] + /jsonservice/v1/
+**BASE** : url for connection (for tests) : [http://api-beta.junction6travel.com] + /jsonservice/v1/
 
 **METHOD** : api method desired, eg. 'products' (to get a list of live products)
 
