@@ -174,10 +174,23 @@ This method is only available through HTTP POST. Both username and password must
 ---
 
 
+### ordersbydatecreated
+**Required Parameters**
+
+* **_startdate_** - Begining of date range to search, format: YYYY-MM-DD (time will be set to 00:00:00)
+* **_enddate_** - End of date range to search, format: YYYY-MM-DD (time will be set to 23:59:59)
+
+**Response**
+
+* **_Array_** - _Array_ of OrderIDs
+
+---
+
+
 ### getcustomer
 **Required Parameters**
 
-* **_CustomerID_**  
+* **_CustomerID_**
 
 **Response**
 
