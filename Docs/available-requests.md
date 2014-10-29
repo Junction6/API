@@ -151,7 +151,7 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 **Notes**
 
-This method is only available through HTTP POST. Both username and password must be encryted with the agreed upon cipher method, mode and salt.
+This method is only available through HTTP POST. Both username and password must be encryted with the agreed upon cipher method, mode, key and IV.
 
 
 ---
@@ -197,6 +197,19 @@ This method is only available through HTTP POST. Both username and password must
 * **_CustomerObject_**
 
 ---
+
+
+### customerorders
+**Required Parameters**
+
+* **_customerid_**
+
+**Response**
+
+* **_Array_** - Array of OrderIDs
+
+---
+
 
 
 ### products
