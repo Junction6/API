@@ -4,6 +4,7 @@
 
 ### OrderObject
 * **"ExternalOrderID"**	- _Integer_ -	Reference ID for this Order.
+* **"Created"**			- _String_ -	Date of creation for the Order.
 * **"Items"**     		- _Array of OrderItemObjects_ -	Items belonging to this order.
 * **"Customer"**  		- _CustomerObject_ -	Details of the customer attached to this order.
 * **"Status"**    		- _String_ -	The current status of this order.
@@ -25,17 +26,44 @@ __An OrderItemObject will include the following fields at minimum and may includ
 * **"Supplier"**    	- _SupplierObject_ -	Details of the Supplier, if any.
 
 
-__Below are types of extended ProductObjects by classname with their extra fields__
+__Below are types of extended OrderItemObjects by classname with their extra fields__
 
-### EventOrderItemObject / LimitedAvailabilityDateProductOrderItemObject
+### EventOrderItemObject / LimitedAvailabilityDateProductOrderItemObject ( typeof OrderItemObject )
 
 * **"CustomerSequenceNumber"**	- _String_ -	Customers sequence number (for the day of this Event)
-* **"Event"**	- _EventObject_ -	Detail of the Event this item is attched to.
-
----
+* **"Event"**	- _EventObject_ -	Details of the Event this item is attached to.
 
 
-### GiftVoucherOrderItemObject
+
+### JourneyOrderItemObject ( typeof OrderItemObject )
+
+* **"Parts"**	- _Array of OrderItemObjects_ -	Name of the Gift Voucher.
+
+
+
+### RouteTicketOrderItemObject ( typeof OrderItemObject )
+
+* **"Title"**	- _String_ -	Name of the Route.
+* **"StartLocation"**	- _LocationObject_ -	Start location.
+* **"EndLocation"**	- _LocationObject_ -	End location.
+* **"OutwardJourney"**	- _JourneyOrderItemObject_ -	The detail of the outward journey.
+* **"ReturnJourney"**	- _JourneyOrderItemObject_ -	The detail of the return journey.
+
+
+
+### RouteOrderItemObject ( typeof OrderItemObject )
+
+* **"CustomPickup"**		- _String_ -	Custom Pickup if one has been specified.
+* **"CustomPickupTime"**	- _String_ -	Custom Pickup Time if any set.
+* **"CustomDropoff"**		- _String_ -	Custom Dropoff if one has been specified.
+* **"Status"**				- _String_ -	One of: Booked, Held, Priority, Waitlist, Standby, Cancelled, Failed.
+* **"Run"**					- _EventObject_ -	The details of the route.
+* **"StartPickup"**			- _RoutePickupLocationObject_ -	Standard Pickup at the start of the route.
+* **"EndPickup"**			- _RoutePickupLocationObject_ -	Standard Pickup at the end of the route.
+
+
+
+### GiftVoucherOrderItemObject ( typeof OrderItemObject )
 
 * **"VoucherTitle"**	- _String_ -	Name of the Gift Voucher.
 * **"GiftVoucherCode"**	- _String_ -	Unique Code.
@@ -44,6 +72,37 @@ __Below are types of extended ProductObjects by classname with their extra field
 * **"ExpiryDate"**	- _String_ -	Date string.
 * **"AmountRemaining"**	- _Float_ -		Current value.
 * **"Status"**	- _String_ -	Gift Voucher status, one of 'Active', 'Expired', 'Redeemed', 'Cancelled'.
+
+
+__End OrderItemObjects__
+
+
+
+### RoutePickupLocationObject
+
+* **"PickupPoint"**	- _PickupPointObject_ -	Details of the pickup point.
+
+---
+
+
+### LocationObject
+
+* **"Title"**		- _String_ -	Title of the location
+* **"ShortCode"**	- _String_ -	Shortcode to represent the location.
+
+---
+
+
+### PickupPointObject ( typeof LocationObject )
+
+* **"Surcharge"**	- _Float_ -	Surcharge that will normally be charged to service this pickup point.
+* **"Address"**		- _String_ - Street address.
+* **"City"**		- _String_ -
+* **"PostalCode"**		- _String_ -
+* **"State"**		- _String_ -
+* **"Country"**		- _String_ -
+* **"GPSLatitude"**		- _String_ -
+* **"GPSLongitude"**		- _String_ -
 
 ---
 
@@ -94,7 +153,7 @@ __A ProductObject will include the following fields at minimum and may include m
 
 __Below are types of extended ProductObjects by classname with their extra fields__
 
-### GiftVoucherProduct
+### GiftVoucherProduct ( typeof ProductObject )
 
 * **"Expires"**	- _Boolean_ -
 * **"ExpiryType"**	- _String_ -	One of 'Offset', 'SetDate'
@@ -109,7 +168,7 @@ __Below are types of extended ProductObjects by classname with their extra field
 * **"EmailSubject"**	- _String_ -	
 
 
-### LimitedAvailabilityDateProduct / LimitedAvailabilityDateAndTimeProduct
+### LimitedAvailabilityDateProduct / LimitedAvailabilityDateAndTimeProduct ( typeof ProductObject )
 
 * **"canFreesell"**	- _Boolean_ -	May be sold without making a date/time booking.
 * **"SurchargePax"**	- _Integer_ -	Minimum number of bookings required to avoid a surcharge.
@@ -118,11 +177,13 @@ __Below are types of extended ProductObjects by classname with their extra field
 * **"Next10Events"**	- _Array of EventObjects_ -
 
 
-### LimitedAvailabilityByPriceProduct
+### LimitedAvailabilityByPriceProduct ( typeof ProductObject )
 * **"RedeemableDate"**	- _String_ -
 * **"RRP"**				- _Float_ -
 * **"DailyAvailability"**	- _Integer_ -
 
+
+__End ProductObjects__
 
 ---
 
@@ -156,6 +217,9 @@ __Below are types of extended ProductObjects by classname with their extra field
 * **"ManifestStatus"**		- _String_ -	Current manifest status, one of 'Unconfirmed', 'Open', 'Locked','Open'.
 * **"Time"**		- _String_ -	Start and end time.
 
+---
+
+
 
 ---
 
@@ -169,18 +233,6 @@ __Below are types of extended ProductObjects by classname with their extra field
 
 ---
 
-
-### GiftVoucherItemObject
-* **"ID"**
-* **"Title"**		- _String_ -	Title of the Gift Voucher Product.
-* **"UnitPrice"**		- _Float_ -	Original value of the Gift Voucher.
-* **"Quantity"**		- _Integer_ -	Number of vouchers.
-* **"Customer"**		- _CustomerObject_ -	The purchasing Customer.
-* **"AssignedToCustomer"**		- _CustomerObject_ -	The Customer that this Gift Voucher has been assigned to or null if not assigned.
-* **"GiftVoucherCode"**		- _String_ -	The unique code for this Gift Voucher.
-* **"AmountRemaining"**		- _Float_ -		Usable monetary amount remaining on this Gift Voucher.
-* **"Status"**		- _String_ -	One of 'Active', 'Expired', 'Redeemed', 'Cancelled'
-* **"ExpiryDate"**		- _String_ -	Date String, expiry date.
 
 ### SupplierObject
 * **"ID"**		- _Integer_ -	Reference ID for this Supplier.
