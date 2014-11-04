@@ -58,6 +58,8 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 * **"CustomDropoff"**		- _String_ -	Custom Dropoff if one has been specified.
 * **"Status"**				- _String_ -	One of: Booked, Held, Priority, Waitlist, Standby, Cancelled, Failed.
 * **"Run"**					- _EventObject_ -	The details of the route.
+* **"StartTimetable"**		- _RouteTimeTableLocationObject_ -	Timetable details for the start sector.
+* **"EndTimetable"**		- _RouteTimeTableLocationObject_ -	Timetable details for the end sector.
 * **"StartPickup"**			- _RoutePickupLocationObject_ -	Standard Pickup at the start of the route.
 * **"EndPickup"**			- _RoutePickupLocationObject_ -	Standard Pickup at the end of the route.
 
@@ -76,6 +78,13 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 
 __End OrderItemObjects__
 
+
+### RouteTimeTableLocationObject
+
+* **"ArriveTime"**	- _String_ -	Time of arrival.
+* **"DepartTime"**	- _String_ -	Departure Time.
+
+---
 
 
 ### RoutePickupLocationObject
