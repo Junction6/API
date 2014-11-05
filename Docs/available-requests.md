@@ -272,7 +272,7 @@ This method is only available through HTTP POST. Both username and password must
 
 **Optional Parameters**
 
-* **_date_** - Date String in format: "Y-m-d",  Defaults to todays date.
+* **_date_** OR ( **_startdate_** AND **_enddate_** ) - All of these parameters are Strings in the format: "Y-m-d".  If **_date_** is given events on that day are returned. If **_date_** is excluded and **_startdate_** and **_enddate_** are given then we have an inclusive date range to search. If none of these parameters are supplied date defaults to todays date.
 
 **Response**
 
@@ -280,4 +280,18 @@ This method is only available through HTTP POST. Both username and password must
 
 
 ---
+
+
+### getPickupPoints
+**Required Parameters**
+
+**_none_**
+
+**Response**
+
+* **"PickupPoints"** - _Array of PickupPointObjects_ -
+
+
+---
+
 
