@@ -34,13 +34,6 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 * **"Event"**	- _EventObject_ -	Details of the Event this item is attached to.
 
 
-
-### JourneyOrderItemObject ( typeof OrderItemObject )
-
-* **"Parts"**	- _Array of OrderItemObjects_ -	Name of the Gift Voucher.
-
-
-
 ### RouteTicketOrderItemObject ( typeof OrderItemObject )
 
 * **"Title"**	- _String_ -	Name of the Route.
@@ -48,6 +41,17 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 * **"EndLocation"**	- _LocationObject_ -	End location.
 * **"OutwardJourney"**	- _JourneyOrderItemObject_ -	The detail of the outward journey.
 * **"ReturnJourney"**	- _JourneyOrderItemObject_ -	The detail of the return journey.
+
+
+### PassProductOrderItemObject ( typeof OrderItemObject )
+
+* **"Parts"**	- _Array of JourneyOrderItemObjects_ -	Details of the Journeys in the Pass.
+
+
+
+### JourneyOrderItemObject ( typeof OrderItemObject )
+
+* **"Parts"**	- _Array of RouteOrderItemObjects_ -	Details of the Routes in the Journey.
 
 
 
