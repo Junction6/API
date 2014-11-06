@@ -28,7 +28,13 @@ __An OrderItemObject will include the following fields at minimum and may includ
 
 __Below are types of extended OrderItemObjects by classname with their extra fields__
 
-### EventOrderItemObject / LimitedAvailabilityDateProductOrderItemObject ( typeof OrderItemObject )
+### ProductOrderItemObject ( typeof OrderItemObject )
+
+* **"ProductID"**	- _Integer_ -	ID of the ProductObject for this item.
+* **"ProductCode"**	- _LocationObject_ -	Code of the ProductObject on this item.
+
+
+### EventOrderItemObject / LimitedAvailabilityDateProductOrderItemObject ( typeof ProductOrderItemObject )
 
 * **"CustomerSequenceNumber"**	- _String_ -	Customers sequence number (for the day of this Event)
 * **"Event"**	- _EventObject_ -	Details of the Event this item is attached to.
@@ -43,7 +49,7 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 * **"ReturnJourney"**	- _JourneyOrderItemObject_ -	The detail of the return journey.
 
 
-### PassProductOrderItemObject ( typeof OrderItemObject )
+### PassProductOrderItemObject ( typeof ProductOrderItemObject )
 
 * **"Parts"**	- _Array of JourneyOrderItemObjects_ -	Details of the Journeys in the Pass.
 
@@ -55,7 +61,7 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 
 
 
-### RouteOrderItemObject ( typeof OrderItemObject )
+### RouteOrderItemObject ( typeof ProductOrderItemObject )
 
 * **"CustomPickup"**		- _String_ -	Custom Pickup if one has been specified.
 * **"CustomPickupTime"**	- _String_ -	Custom Pickup Time if any set.
@@ -69,7 +75,7 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 
 
 
-### GiftVoucherOrderItemObject ( typeof OrderItemObject )
+### GiftVoucherOrderItemObject ( typeof ProductOrderItemObject )
 
 * **"VoucherTitle"**	- _String_ -	Name of the Gift Voucher.
 * **"GiftVoucherCode"**	- _String_ -	Unique Code.
@@ -156,7 +162,7 @@ __A ProductObject will include the following fields at minimum and may include m
 * **"WhitelabelContentFooter"** - _String_ HTML text
 * **"Content"** - _String_ HTML text
 * **"BookingInfo"** - _String_ HTML text
-* **"Supplier"** - _SupplierObject_ -
+* **"Supplier"** - _OrganisationObject_ -
 * **"Variations"** - _Array of VariationObjects_ -
 * **"Location"** -_LocationObject_ -
 * **"ProductPickupLocations"** -_Array of ProductPickupLocationObjects_ -
@@ -220,19 +226,21 @@ __End ProductObjects__
 
 * **"ID"**		- _Integer_ -	Reference ID for this Event.
 * **"Date"**		- _String_ -	Date String, date of the Event.
-* **"Start"**		- _String_ -	Start time of the Event.
-* **"End"**		- _String_ -	End time of the Event.
+* **"Start"**		- _String_ -	Start time of the Event - may be empty if not a time specific event.
+* **"End"**		- _String_ -	End time of the Event - may be empty if not a time specific event.
 * **"Quantity"**		- _String_ -	Total quantity, before any bookings.
 * **"Remaining"**		- _String_ -	Bookable quantity remaining.
 * **"CanBook"**		- _Boolean_ -	Is the Event bookable (could be in the past).
 * **"Unlimited"**	- _Boolean_ -	Unlimited availability.
 * **"Description"**		- _String_ -	Event description.
 * **"ManifestStatus"**		- _String_ -	Current manifest status, one of 'Unconfirmed', 'Open', 'Locked','Open'.
+
+
+### TimedEventObject (typeof EventObject)
+
 * **"Time"**		- _String_ -	Start and end time.
 
----
-
-
+__TimedEventObjects will always have _Start_ and _End_ fields set.__
 
 ---
 
@@ -240,9 +248,9 @@ __End ProductObjects__
 ### SpecialPriceObject
 * **"Title"**		- _String_ -	Title of the special price.
 * **"Price"**		- _Float_ -
-* **"StartDate"**	- _String_ -
-* **"EndDate"**		- _String_ -	Date String, start of validity period.
-* **"Active"**		- _String_ -	Date String, end of validity period.
+* **"StartDate"**	- _String_ -	Date String, start of validity period.
+* **"EndDate"**		- _String_ -	Date String, end of validity period.
+* **"Active"**		- _Boolean_ -	
 
 ---
 
