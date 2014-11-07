@@ -140,7 +140,8 @@ __End OrderItemObjects__
 ### ProductObject
 __A ProductObject will include the following fields at minimum and may include more depending on the type of product__
 
-* **"ID"** 'ID'	Reference ID for this Product.
+* **"ID"** _Integer_	Reference ID for this Product.
+* **"LastEdited"** _DateTime_	Date and time this object was last edited.
 * **"Title"** - _String_ -
 * **"Recommended"** - _Boolean_ -
 * **"HotDeal"** - _Boolean_ -
