@@ -253,15 +253,16 @@ This method is only available through HTTP POST. Both username and password must
 
 **Optional Parameters**
 
-* **_productid_**
+* **_productid_**  - Can be a single ID or a comma seperated list of IDs to return an array of ProductObjects
 * **_productcode_**
 * **_live_**
 
 **Response**
 
-* **_ProductObject_**
+* **_ProductObject_** or _Array of ProductObjects_
 
 
+_Note: supplying no parameters to this method will produce a response containing an array of **ALL ProductObjects**
 ---
 
 

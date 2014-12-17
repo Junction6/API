@@ -8,6 +8,7 @@
 * **"Items"**     		- _Array of OrderItemObjects_ -	Items belonging to this order.
 * **"Customer"**  		- _CustomerObject_ -	Details of the customer attached to this order.
 * **"Status"**    		- _String_ -	The current status of this order.
+* **"Agency"**  		- _AgencyObject_ OR _BranchObject_ -	If an Agency or Branch made this Order this will be populated.
 
 ---
 
@@ -140,7 +141,8 @@ __End OrderItemObjects__
 ### ProductObject
 __A ProductObject will include the following fields at minimum and may include more depending on the type of product__
 
-* **"ID"** 'ID'	Reference ID for this Product.
+* **"ID"** _Integer_	Reference ID for this Product.
+* **"LastEdited"** _DateTime_	Date and time this object was last edited.
 * **"Title"** - _String_ -
 * **"Recommended"** - _Boolean_ -
 * **"HotDeal"** - _Boolean_ -
@@ -162,7 +164,7 @@ __A ProductObject will include the following fields at minimum and may include m
 * **"WhitelabelContentFooter"** - _String_ HTML text
 * **"Content"** - _String_ HTML text
 * **"BookingInfo"** - _String_ HTML text
-* **"Supplier"** - _OrganisationObject_ -
+* **"Supplier"** - _SupplierObject_ -
 * **"Variations"** - _Array of VariationObjects_ -
 * **"Location"** -_LocationObject_ -
 * **"ProductPickupLocations"** -_Array of ProductPickupLocationObjects_ -
@@ -236,7 +238,7 @@ __End ProductObjects__
 * **"ManifestStatus"**		- _String_ -	Current manifest status, one of 'Unconfirmed', 'Open', 'Locked','Open'.
 
 
-### TimedEventObject (typeof EventObject)
+### TimedEventObject ( typeof EventObject )
 
 * **"Time"**		- _String_ -	Start and end time.
 
@@ -255,9 +257,8 @@ __TimedEventObjects will always have _Start_ and _End_ fields set.__
 ---
 
 
-### SupplierObject
+### OrganisationObject
 * **"ID"**		- _Integer_ -	Reference ID for this Supplier.
-* **"Internal"**	- _Boolean_ -	Is an internal supplier.
 * **"Name"**	- _String_ -	
 * **"Address"**	- _String_ -	
 * **"Suburb"**	- _String_ -	
@@ -268,7 +269,19 @@ __TimedEventObjects will always have _Start_ and _End_ fields set.__
 * **"CommissionType"**	- _String_ -	One of 'Inherit', 'None', 'Percentage', 'Fixed'
 * **"Commission"**	- _Float_ -		Represents a percentage of product sold price or fixed value
 
+
+### SupplierObject ( typeof OrganisationObject )
+* **"Internal"**	- _Boolean_ -	Is an internal supplier.
+
+
+### AgencyObject ( typeof OrganisationObject )
+
+
+### BranchObject ( typeof OrganisationObject )
+
 ---
+
+
 
 
 ### LocationObject
