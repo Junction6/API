@@ -100,6 +100,7 @@ __End OrderItemObjects__
 
 ### RoutePickupLocationObject
 
+* **"Time"**	- _String_ -	Time for the pickup/dropoff.
 * **"PickupPoint"**	- _PickupPointObject_ -	Details of the pickup point.
 
 ---
