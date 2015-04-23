@@ -13,6 +13,8 @@ API
 ####Example Response
 [Limited Availability Product](https://github.com/Junction6/API/blob/V1/Docs/Example-ProductList.md)
 
+####Appendix
+[Object Definitions](https://github.com/Junction6/API/blob/V1/Docs/appendix.md#api-object-format-appendix)
 
 ####Developers: 
 [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
