@@ -89,6 +89,44 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 
 __End OrderItemObjects__
 
+----
+
+
+
+### LocationObject
+
+* **"Title"**		- _String_ -	Title of the location
+* **"ShortCode"**	- _String_ -	Shortcode to represent the location.
+
+---
+
+### PickupPointObject ( typeof LocationObject )
+
+* **"Surcharge"**	- _Float_ -	Surcharge that will normally be charged to service this pickup point.
+* **"Address"**		- _String_ - Street address.
+* **"City"**		- _String_ -
+* **"PostalCode"**		- _String_ -
+* **"State"**		- _String_ -
+* **"Country"**		- _String_ -
+* **"GPSLatitude"**		- _String_ -
+* **"GPSLongitude"**		- _String_ -
+
+---
+
+### ProductPickupLocationObject
+
+* **"DefaultPickup"**	- _Boolean_ -	If true this is the default pickup.
+* **"PickupPoint"**	- _PickupPointObject_ -	Details of the pickup point.
+
+---
+
+
+### ProductTimetablePickupLocationObject ( typeof ProductPickupLocationObject )
+
+* **"Time"**	- _String_ -	Time for the pickup/dropoff.
+
+---
+
 
 ### RouteTimeTableLocationObject
 
@@ -106,26 +144,6 @@ __End OrderItemObjects__
 ---
 
 
-### LocationObject
-
-* **"Title"**		- _String_ -	Title of the location
-* **"ShortCode"**	- _String_ -	Shortcode to represent the location.
-
----
-
-
-### PickupPointObject ( typeof LocationObject )
-
-* **"Surcharge"**	- _Float_ -	Surcharge that will normally be charged to service this pickup point.
-* **"Address"**		- _String_ - Street address.
-* **"City"**		- _String_ -
-* **"PostalCode"**		- _String_ -
-* **"State"**		- _String_ -
-* **"Country"**		- _String_ -
-* **"GPSLatitude"**		- _String_ -
-* **"GPSLongitude"**		- _String_ -
-
----
 
 
 ### CustomerObject
@@ -168,7 +186,7 @@ __A ProductObject will include the following fields at minimum and may include m
 * **"Supplier"** - _SupplierObject_ -
 * **"Variations"** - _Array of VariationObjects_ -
 * **"Location"** -_LocationObject_ -
-* **"ProductPickupLocations"** -_Array of ProductPickupLocationObjects_ -
+* **"ProductPickupLocations"** -_Array of ProductPickupLocationObjects or ProductTimetablePickupLocationObjects-
 * **"SpecialPrices"** -_Array of SpecialPriceObjects_ -
 * **"ExtraProducts"** -_Array of ExtraProductObjects_ -
 
