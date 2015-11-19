@@ -251,7 +251,8 @@ __End ProductObjects__
 * **"End"**		- _String_ -	End time of the Event - may be empty if not a time specific event.
 * **"Quantity"**		- _String_ -	Total quantity, before any bookings.
 * **"Remaining"**		- _String_ -	Bookable quantity remaining.
-* **"CanBook"**		- _Boolean_ -	Is the Event bookable (could be in the past).
+* **"CanBook"**		- _Boolean_ -	Is the Event bookable.
+* **"IsPastCutOff"**		- _Boolean_ -	Is the Event past its booking cutoff.
 * **"Unlimited"**	- _Boolean_ -	Unlimited availability.
 * **"Description"**		- _String_ -	Event description.
 * **"ManifestStatus"**		- _String_ -	Current manifest status, one of 'Unconfirmed', 'Open', 'Locked','Open'.
