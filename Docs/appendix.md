@@ -81,10 +81,11 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 * **"VoucherTitle"**	- _String_ -	Name of the Gift Voucher.
 * **"GiftVoucherCode"**	- _String_ -	Unique Code.
 * **"Customer"**	- _CustomerObject_ -	The customer who originally bought the Gift Voucher.
-* **"AssignedToCustomer"**	- _CustomerObject_ -	The customer, if any, who the Gift Voucher was assigned to.
+* **"AssignedCustomer"**	- _CustomerObject_ -	The customer, if any, who the Gift Voucher was assigned to.
 * **"ExpiryDate"**	- _String_ -	Date string.
 * **"AmountRemaining"**	- _Float_ -		Current value.
 * **"Status"**	- _String_ -	Gift Voucher status, one of 'Active', 'Expired', 'Redeemed', 'Cancelled'.
+* **"GiftMessage"**	- _String_ -	message to display on gift voucher.
 
 
 __End OrderItemObjects__

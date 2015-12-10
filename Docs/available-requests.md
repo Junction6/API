@@ -89,10 +89,23 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 ### orderadditem
 **Required Parameters**
 
-* **_orderid_**
+* **_orderid_** - _Integer_ 
 
-* **_productvariation_** OR **_productid_**  - In most cases the product variation is required but some products may be purchased using only the Product ID (Gift Voucher)
+* **_productvariation_**  - _Integer_  OR **_productid_** - _Integer_  - In most cases the product variation is required but some products may be purchased using only the Product ID (Gift Voucher)
 
+
+**Optional Parameters**
+
+* **_productid_** - _Integer_  - see above
+* **_eventid_** - _Integer_ - The event id for the desired event to book. Used  for limited availability and packages only
+* **_quantity_** - _Integer_ - The quantity to book of the desired item 
+
+**Optional Gift Voucher Parameters** - can be used when booking a gift voucher item. Otherwise ignored.
+
+* **_firstname_** - _String_ - **required** to assign a new customer (recipient) to the gift voucher
+* **_surname_** - _String_ - optional to assign a new customer (recipient) to the gift voucher
+* **_email_** - _String_ - optional to assign a new customer (recipient) to the gift voucher
+* **_giftmessage_** - _String_ - optional gift voucher message
 
 **Response**
 
@@ -110,6 +123,8 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 * **_orderid_**
 
 * **_itemid_**
+
+
 
 **Response**
 
