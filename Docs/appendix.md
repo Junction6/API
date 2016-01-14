@@ -33,6 +33,7 @@ __Below are types of extended OrderItemObjects by classname with their extra fie
 
 * **"ProductID"**	- _Integer_ -	ID of the ProductObject for this item.
 * **"ProductCode"**	- _LocationObject_ -	Code of the ProductObject on this item.
+* **"Description"**	- _String_ -	Booking details of this item, including a package breakdown if it is a package variation item. May contain simple HTML such as br tags.
 
 
 ### EventOrderItemObject / LimitedAvailabilityDateProductOrderItemObject ( typeof ProductOrderItemObject )
