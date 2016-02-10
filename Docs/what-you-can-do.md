@@ -52,12 +52,19 @@ Optional inputs<br class="atl-forced-newline">
 <code>&amp;<em>date</em>=[date : YYYY-MM-DD]</code> (today by default)</p></td>
 </tr>
 <tr>
-<td class=""><p><strong>Add Item to Oder</strong> <br class="atl-forced-newline">
+<td class=""><p><strong>Add Item to Order</strong> <br class="atl-forced-newline">
 /jsonservice/v1/orderadditem/</p></td>
 <td class=""><p><code><strong>&amp;orderid=[ID of order]</code></strong> <br class="atl-forced-newline">
 <code><strong>&amp;productvariation=[ID of price variation]</code></strong> <br class="atl-forced-newline">
 <code>&amp;<em>quantity=[Quantity of the item]</code> (1 by default) <br class="atl-forced-newline">
 <code>&amp;<em>eventid=[ID of event]</code></p></td>
+</tr>
+<tr>
+<td class=""><p><strong>Add Payment to Order</strong> <br class="atl-forced-newline">
+/jsonservice/v1/orderaddpayment/</p></td>
+<td class=""><p>
+<code><strong>&amp;orderid=[ID of order]</code></strong> <br class="atl-forced-newline">
+<code>&amp;clientpaymentclassid=[ID of payment type]</code> <br class="atl-forced-newline">
 </tr>
 <tr>
 <td class=""><p><strong>Complete Order</strong> <br class="atl-forced-newline">
