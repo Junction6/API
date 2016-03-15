@@ -26,9 +26,20 @@ A description of Objects referenced here can be found in the [Appendix](https://
 
 * **_OrderID_**
 
+**Optional Paramters**
+
+* **_CustomerEmail_**  - If not set no email is sent to the customer. 
+						 1 to send all email components or an Array of specified email components to send example: 
+						   ['Voucher': 1,
+							'SalesReceipt': 1,
+							'Certificate': 0,
+							'GiftVoucher': 1,
+							'Itinerary': 0,
+							'LoginDetails': 0]
+
 **Response**
 
-* **_OrderObject_**
+* **_OrderObject_** - If CustomerEmail was set this object will also contain "OrderEmailReport", an Array of some or all of ['EmailQueuedID': Integer, 'EmailStatus': enum(Queued,Blocked,Failed), 'EmailInformation': String]
 
 ---
 
@@ -146,6 +157,28 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 
 ---
+
+
+### sendcustomeremail
+**Required Parameters**
+
+* **_OrderID_**  
+
+* **_CustomerEmail_**  - 1 to send all email components or an Array of specified email components to send example: 
+						   ['Voucher': 1,
+							'SalesReceipt': 1,
+							'Certificate': 0,
+							'GiftVoucher': 1,
+							'Itinerary': 0,
+							'LoginDetails': 0]
+
+**Response**
+
+* **"OrderEmailReport"** - _Boolean_ -  Array of some or all of these ['EmailQueuedID': Integer, 'EmailStatus': enum(Queued,Blocked,Failed), 'EmailInformation': String]
+
+
+---
+
 
 
 ## Utils (HTTP POST):
