@@ -89,16 +89,28 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 ### orderadditem
 **Required Parameters**
 
-* **_orderid_**
+* **_orderid_** _String_ - ID of the order to add item to.
 
 * **_productvariation_** OR **_productid_**  - In most cases the product variation is required but some products may be purchased using only the Product ID (Gift Voucher)
 
+**Required Parameters for Limited Availabilty Items**
+
+* **_eventid_** _String_ - ID of the event to book.
+
+**Optional Parameters For Gift Voucher Items**
+
+* **_firstname_** _String_ - Required to create the recipient, cannot be omitted if surname and/or email are included
+
+* **_surname_** _String_ - Optional with firstname
+
+* **_email_** _String_ - - Optional with firstname
+
+* **_giftmessage_** _String_  - Optional message from the purchaser to the recipient.
 
 **Response**
 
-* **"Item"** - _Boolean_ -      Success status of the payment.
+* **"Order"**   - _OrderObject_ -   The complete OrderObject with extra embedded properties "NewOrderItem" - OrderItemObject and "NewOrderItemID".
 
-* **"Order"**   - _OrderObject_ -   The order specified in OrderID.
 
 
 ---
