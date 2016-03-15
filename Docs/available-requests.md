@@ -114,7 +114,7 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 * **_surname_** _String_ - Optional with firstname
 
-* **_email_** _String_ - - Optional with firstname
+* **_email_** _String_ - - Optional with firstname.  Important: If you include this parameter the recipient will receive an email with the Gift Voucher
 
 * **_giftmessage_** _String_  - Optional message from the purchaser to the recipient.
 
