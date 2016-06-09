@@ -118,6 +118,12 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 * **_giftmessage_** _String_  - Optional message from the purchaser to the recipient.
 
+* **_setEditPrice_** _Float_  - Optional push in custom price (The 'Fixed Price' flag must be set to 'No' in J6 for the Gift Voucher product in question).
+
+* **_description_** _Text_  - Optional push in discription of giftvoucher (intended to be used when using custom pricing (setEditPrice variable) to define what Gift Voucher value is supposed to be redeemed against).
+ 
+* **_editexpirydate_** _Float_  - Optional push in custom expirary date (The 'Expiry Is Editable' flag in J6 must be set to 'Yes' for the Gift Voucher product in question).
+
 **Response**
 
 * **"Order"**   - _OrderObject_ -   The complete OrderObject with extra embedded properties "NewOrderItem" - OrderItemObject and "NewOrderItemID".
