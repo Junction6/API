@@ -122,7 +122,7 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 * **_description_** _Text_  - Optional push in discription of giftvoucher (intended to be used when using custom pricing (setEditPrice variable) to define what Gift Voucher value is supposed to be redeemed against).
  
-* **_editexpirydate_** _Float_  - Optional push in custom expirary date (The 'Expiry Is Editable' flag in J6 must be set to 'Yes' for the Gift Voucher product in question).
+* **_editexpirydate_** _Date_  - Optional push in custom expirary date (The 'Expiry Is Editable' flag in J6 must be set to 'Yes' for the Gift Voucher product in question).
 
 **Response**
 
