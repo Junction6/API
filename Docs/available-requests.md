@@ -155,6 +155,10 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 * **_Amount_**  
 
+**Optional Parameters**
+
+* **_ClientPaymentClassID_** _Integer_ - Can specify which Agent Voucher payment type to create if multiple exist. 
+
 **Response**
 
 * **"Success"** - _Boolean_ -      Success status of the payment.
