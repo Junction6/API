@@ -64,6 +64,7 @@ Optional inputs<br class="atl-forced-newline">
 /jsonservice/v1/orderaddpayment/</p></td>
 <td class=""><p>
 <code><strong>&amp;orderid=[ID of order]</code></strong> <br class="atl-forced-newline">
+<code><strong>&amp;amount=[amount to pay decimal value]</code></strong> <br class="atl-forced-newline">
 <code>&amp;clientpaymentclassid=[ID of payment type]</code> <br class="atl-forced-newline">
 </tr>
 <tr>
