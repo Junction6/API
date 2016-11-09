@@ -34,6 +34,7 @@ A description of Objects referenced here can be found in the [Appendix](https://
 							'SalesReceipt': 1,
 							'Certificate': 0,
 							'GiftVoucher': 1,
+							'GiftVoucherRecipient': 0,
 							'Itinerary': 0,
 							'LoginDetails': 0]
 
@@ -120,7 +121,7 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 * **_editprice_** _Float_  - Optional push in custom price (The 'Fixed Price' flag must be set to 'No' in J6 for the Gift Voucher product in question).
 
-* **_description_** _Text_  - Optional push in discription of giftvoucher (intended to be used when using custom pricing (setEditPrice variable) to define what Gift Voucher value is supposed to be redeemed against).
+* **_description_** _Text_  - Optional push in description of giftvoucher (intended to be used when using custom pricing (setEditPrice variable) to define what Gift Voucher value is supposed to be redeemed against).
  
 * **_editexpirydate_** _Date_  - Optional push in custom expirary date (The 'Expiry Is Editable' flag in J6 must be set to 'Yes' for the Gift Voucher product in question).
 
@@ -170,11 +171,12 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 * **_OrderID_**  
 
-* **_CustomerEmail_**  - 1 to send all email components or an Array of specified email components to send example: 
+* **_CustomerEmail_**  - '1' to send all email components OR an Array of specified email components to send, example: 
 						   ['Voucher': 1,
 							'SalesReceipt': 1,
 							'Certificate': 0,
 							'GiftVoucher': 1,
+							'GiftVoucherRecipient': 1,  (only relevant if a recipient with an email address has been added to a Gift Voucher Order Item and will result in a separate email being sent to that recipient)
 							'Itinerary': 0,
 							'LoginDetails': 0]
 
