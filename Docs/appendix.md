@@ -9,6 +9,7 @@
 * **"Customer"**  		- _CustomerObject_ -	Details of the customer attached to this order.
 * **"Status"**    		- _String_ -	The current status of this order.
 * **"Agency"**  		- _AgencyObject_ OR _BranchObject_ -	If an Agency or Branch made this Order this will be populated.
+* **"Notes"**     		- _Array of NoteObjects_ -	Notes on this order.
 
 ---
 
@@ -303,6 +304,13 @@ __TimedEventObjects will always have _Start_ and _End_ fields set.__
 ---
 
 
+### NoteObject
+* **"ID"**		- _Integer_
+* **"note"**		- _String_ -	The note text.
+* **"showOnVoucher"**		- _Boolean_ -
+* **"showOnManifest"**	- _Boolean_ -
+
+---
 
 
 ### LocationObject
