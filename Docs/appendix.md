@@ -306,7 +306,7 @@ __TimedEventObjects will always have _Start_ and _End_ fields set.__
 
 ### NoteObject
 * **"ID"**		- _Integer_
-* **"note"**		- _String_ -	The note text.
+* **"Note"**		- _String_ -	The note text.
 * **"showOnVoucher"**		- _Boolean_ -
 * **"showOnManifest"**	- _Boolean_ -
 
