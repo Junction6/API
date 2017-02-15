@@ -20,6 +20,22 @@ Optional inputs<br class="atl-forced-newline">
 <code>&amp;<em>live</em>=[0 OR 1]</code></p></td>
 </tr>
 <tr>
+<td class=""><p><strong>Get Orders</strong> <br class="atl-forced-newline">
+/jsonservice/v1/orders/</p></td>
+<td class=""><p>Order list: <code>/</code>
+<br class="atl-forced-newline"><br class="atl-forced-newline">
+Single order: <br class="atl-forced-newline"><code>/[ID]</code>
+<br class="atl-forced-newline">
+or
+<br class="atl-forced-newline">
+<code>&amp;filter[ID]=[ID]</code> 
+<br class="atl-forced-newline"><br class="atl-forced-newline">
+Optional inputs<br class="atl-forced-newline">
+<code>&amp;<em>limit</em>=[Integer]</code> <br class="atl-forced-newline">
+<code>&amp;<em>fields</em>=[name of field1, name of field2, ...]</code> <br class="atl-forced-newline">
+<code>&amp;<em>filter[filtername]</em>=You can filter the results on any search fields</code></p></td>
+</tr>
+<tr>
 <td class=""><p><strong>Create New Order</strong> : create an empty order. <br class="atl-forced-newline">
 /jsonservice/v1/neworder/</p></td>
 <td class=""><p>No parameters.</p></td>
