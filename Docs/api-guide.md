@@ -1,7 +1,7 @@
-#GENERAL
+# GENERAL
 Data Format : **JSON** (JavaScript Object Notation)
 
-#SUMMARY
+# SUMMARY
 Methods can be accessed via url : [http://api.junction6travel.com]
 
 Request methods via API : **BASE + METHOD + OPTIONS + TOKEN**
@@ -17,7 +17,7 @@ Request methods via API : **BASE + METHOD + OPTIONS + TOKEN**
 
 
 
-#TOKENS
+# TOKENS
 
 All requests must include the token parameter: 
 
@@ -30,7 +30,7 @@ All requests must include the token parameter:
 **Testing Client**: 877f5fb686af0e5f5fcfb6d284fab3f9
 
 
-#METHODS
+# METHODS
 
 All available methods are listed in the document file ["Available API Requests"](https://github.com/Junction6/API/blob/V1/Docs/available-requests.md).
 
