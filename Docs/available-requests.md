@@ -37,6 +37,7 @@ A description of Objects referenced here can be found in the [Appendix](https://
 							'GiftVoucherRecipient': 0,
 							'Itinerary': 0,
 							'LoginDetails': 0]
+* **_note_**  _String_ a note to be added to the order
 
 **Response**
 
