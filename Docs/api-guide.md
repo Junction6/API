@@ -38,7 +38,6 @@ To discover the methods  and response fields available on this object type, appe
 
 All available methods are listed in the document file ["Available API Requests"](https://github.com/Junction6/API/blob/V1/Docs/available-requests.md).
 
-
 ## OPTIONS
 
 Examples using the "products" method. 
@@ -73,18 +72,11 @@ Limit results to 100 products starting at 301 (Products 301-400):
 NB: Records start at 0, so limit=10, is equivilant to writing limit=0,10 and will return the first 10 records. limit=1,10 would return records 2-11
 
 
----
-
-
-## fields
+### fields
 
 Get specified fields.  If the field is itself an Object it is possible to use dot notation to also specify fields within that Object.  Listed fields should be comma seperated:
 
 > /products/?token=xyz&ProductID=1911&fields=ID,Title,Supplier.ID,Supplier.Name
-
-
----
-
 
 ### filter
 
@@ -95,9 +87,6 @@ Filter Results by Field:
 Multiple filters can be used:
 
 > /products/?token=xyz&filter[ClassName]=LimitedAvailabilityDateAndTimeProduct&filter[ShowOnWhitelabel]=1
-
-
----
 
 
 ### Product Events
@@ -111,9 +100,6 @@ Return all products, those with events also include all events for 1st September
 Return the weeks events for a product starting 1st September 2014, just showing the ID, date and remaining capacity
 
 > /products/?token=xyz&productid=123&filter[Events.CalendarStartDate]=2014-09-01&events_filter[Events.CalendarEndDate]=2014-09-08&fields=Events.ID,Events.Date,Events.Remaining
-
----
-
 
 
 ## GET AVAILABILITY (of the product)
