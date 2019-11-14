@@ -1,9 +1,9 @@
 # GENERAL
 Data Format : **JSON** (JavaScript Object Notation)
+Note that 'products' is used as an exmaple throughout. However all model-based endpoints use the smae system as described below.
 
 # SUMMARY
 Methods can be accessed via url : [http://api.junction6travel.com]
-
 Request methods via API : **BASE + METHOD + OPTIONS + TOKEN**
 
 **BASE** : url for connection (for tests) : [http://api-beta.junction6travel.com] + /jsonservice/v1/
@@ -13,9 +13,6 @@ Request methods via API : **BASE + METHOD + OPTIONS + TOKEN**
 **OPTIONS** : options to filter products, eg 'limit=10'
 
 **TOKEN** : security token for current connection - mandatory for all api connections
-
-
-
 
 # TOKENS
 
@@ -29,6 +26,11 @@ All requests must include the token parameter:
 
 **Testing Client**: 877f5fb686af0e5f5fcfb6d284fab3f9
 
+# DESCRIBE
+
+To discover the methods  and response fields available on this object type, append '/describe' to the request:
+
+/products/describe/?token=xyz
 
 # METHODS
 
