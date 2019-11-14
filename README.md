@@ -1,4 +1,4 @@
-## OperatorHub API and Documentation
+## OperatorHub API Documentation
 
 ### Model-based Endpoints
 Some endpoints designed to retrieve objects from OperatorHub (products, order, orderitems, customers, staff, vehicles, events, agencies, branches, organisations) have a more standardised interface. See the below link for more information.
