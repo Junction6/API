@@ -156,11 +156,11 @@ Example :
 
 > http://api.junction6travel.com/jsonservice/v1/products/1234/?token=43e9457e334df268270a9d7b275d3700&fields=Title,Supplier.ID
 
-## Get Todays Events for a Limited Availability Product:
+### Get Todays Events for a Limited Availability Product:
 
 > http://api.junction6travel.com/jsonservice/v1/products/1234/?token=43e9457e334df268270a9d7b275d3700&fields=Events
 
-## Get all Products by Supplier ID, return the ID and Title of the Product:
+### Get all Products by Supplier ID, return the ID and Title of the Product:
 
 > http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&filter[SupplierID]=4321&fields=ID,Title
 
