@@ -35,7 +35,7 @@ All requests must include the token parameter:
 All available methods are listed in the document file ["Available API Requests"](https://github.com/Junction6/API/blob/V1/Docs/available-requests.md).
 
 
-#OPTIONS
+# OPTIONS
 
 Examples using the "products" method. 
 
@@ -112,7 +112,7 @@ Return the weeks events for a product starting 1st September 2014, just showing 
 
 
 
-#GET AVAILABILITY (of the product)
+# GET AVAILABILITY (of the product)
 You need to know the ID or the Code of the product you want to search availability for.
 In the part "Options" of the URL you will need to include &ProductID= or &ProductCode=
 If the product is not a limited availability product the response "true" will be sent.
@@ -143,29 +143,34 @@ Example :
 
 
 
-#EXAMPLES
-All products for Demo Client:
+# EXAMPLES
+
+
+## Example Response
+[Limited Availability Product](https://github.com/Junction6/API/blob/V1/Docs/Example-ProductList.md)
+
+## All products for Demo Client:
 
 > http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700
 
 
-Get 50 products for Demo Client:
+## Get 50 products for Demo Client:
 
 > http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&limit=50
 
-Get all products for Demo Client but limit the Variations to the first 2 variations:
+## Get all products for Demo Client but limit the Variations to the first 2 variations:
 
 > http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&variations_limit=2
 
-Get one Product by ID, only retrieve the Product Title and the Supplier ID:
+## Get one Product by ID, only retrieve the Product Title and the Supplier ID:
 
 > http://api.junction6travel.com/jsonservice/v1/products/1234/?token=43e9457e334df268270a9d7b275d3700&fields=Title,Supplier.ID
 
-Get Todays Events for a Limited Availability Product:
+## Get Todays Events for a Limited Availability Product:
 
 > http://api.junction6travel.com/jsonservice/v1/products/1234/?token=43e9457e334df268270a9d7b275d3700&fields=Events
 
-Get all Products by Supplier ID, return the ID and Title of the Product:
+## Get all Products by Supplier ID, return the ID and Title of the Product:
 
 > http://api.junction6travel.com/jsonservice/v1/products/?token=43e9457e334df268270a9d7b275d3700&filter[SupplierID]=4321&fields=ID,Title
 
