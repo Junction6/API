@@ -10,9 +10,3 @@ Some endpoints designed to retrieve objects from OperatorHub (products, order, o
 ### Function-oriented Endpoints
 Other endpoints are more functionally oriented, such as booking and availability, and have differing interfaces. See the link below for their description
 [Function-oriented Endpoint Guide](https://junction6travel.com/apidocs/class-V1Service.html)
-
-#### Appendix
-[Object Definitions](https://github.com/Junction6/API/blob/V1/Docs/appendix.md#api-object-format-appendix)
-
-#### Developers: 
-[Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
