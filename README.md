@@ -1,6 +1,3 @@
-API
-===
-
 ## OperatorHub API and Documentation
 
 ### Model-based Endpoints
