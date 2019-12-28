@@ -39,6 +39,9 @@ A description of Objects referenced here can be found in the [Appendix](https://
 							'LoginDetails': 0]
 * **_note_**  _String_ a note to be added to the order
 
+* **_Note_**  - An optional array to add a note to the Order in format ['note': 'My new note text', 'onVoucher': 1 or 0, 'onManifest': 1 or 0]
+
+
 **Response**
 
 * **_OrderObject_** - If CustomerEmail was set this object will also contain "OrderEmailReport", an Array of some or all of ['EmailQueuedID': Integer, 'EmailStatus': enum(Queued,Blocked,Failed), 'EmailInformation': String]
@@ -169,6 +172,39 @@ Any fields found in the [Customer Object](https://github.com/Junction6/API/blob/
 
 
 ---
+
+
+### orderaddnote
+**Required Parameters**
+
+* **_OrderID_**  
+
+* **_Note_** - _Array_ -  ['note': 'My new note to add to the order', (must be present to create the note)
+						   'onVoucher': 1 or 0, (optional, sets the note to show on Order Voucher)
+						   'onManifest': 1 or 0 (optional, sets the note to show on Manifests)]
+
+**Response**
+
+* **"Order"**   - _OrderObject_ -   The order specified in OrderID.
+
+
+---
+
+
+### orderremovenote
+**Required Parameters**
+
+* **_OrderID_**  
+
+* **_NoteID_**
+
+**Response**
+
+* **"Order"**   - _OrderObject_ -   The order specified in OrderID.
+
+
+---
+
 
 
 ### sendcustomeremail
